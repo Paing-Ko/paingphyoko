@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+#site-logo {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 80px;
+    z-index: 1000;
+}
+
+#logo-link {
+    text-decoration: none;
+    /* Removes underline */
+    cursor: pointer;
+    /* Changes cursor to a hand when hovered over the logo */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to right,
+                red, orange, yellow, green, blue, indigo, violet);
+    color: #000d;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.2s;
+}
+
+#name {
+    color: white;
+    font-size: 3rem;
+
+}
+
+#duck {
+    width: 7.5vw;
+    height: auto;
+    margin-left: -20px;
+
+    transform: translateY(15px);
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    border-radius: 1px;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+/* 
+.outlined-text {
+    text-shadow:
+        -0.75px -0.75px 0 #000,
+        0.75px -0.75px 0 #000,
+        -0.75px 0.75px 0 #000,
+        0.75px 0.75px 0 #000;
+} */
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+hr {
+    margin-top: 0;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+nav ul {
+    margin: 0;
+    text-align: right;
+}
+
+main {
+    padding: 2rem;
+    width: 100%;
+}
+
+main .heading-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    /* This will vertically center the text and image */
+}
+
+main .heading-wrapper h1 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 1.3s steps(13, end);
+}
+
+main .sections {
+    position: relative;
+}
+
+main .sections section:not(:first-of-type) {
+    position: absolute;
+    top: 0;
+}
+
+main .sections section {
+    width: max-content;
+    max-width: 100%;
+}
+
+main .sections section,
+main .sections section:target~section:last-of-type {
+    visibility: hidden;
+}
+
+main .sections section:target,
+main .sections section:last-of-type {
+    visibility: visible;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#hello {
+    margin-top: 4rem;
+    color: floralwhite;
+}
+
+input,
+button {
+    padding: 0.5rem;
+    border: 1.5px solid white;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+    color: white;
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:active {
+    background-color: #ffffff80;
+}
+
+button {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+}
+
+.message {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+}
+
+.message.visible {
+    opacity: 1;
+    pointer-events: all;
+    color: white;
+}

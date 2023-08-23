@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paing Phyo Ko</title>
+    <link rel="icon" href="images/mylogo.PNG" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/mylogo.PNG">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <a href="#" id="logo-link">
+        <img src="images/cs50duck.png" alt="cs50 duck" id="site-logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a class="outlined-text" href="#home">Home</a></li>
+            <li><a class="outlined-text" href="#projects">Projects</a></li>
+
+            <li><a class="outlined-text" href="https://github.com/Paing-Ko" target="_blank">GitHub</a></li>
+            <li><a class="outlined-text" href="https://codepen.io/paingphyoko" target="_blank">CodePen</a></li>
+            <li><a class="outlined-text" href="https://www.youtube.com/@paingpko" target="_blank">YouTube</a></li>
+            <li><a class="outlined-text" href="https://www.instagram.com/doc2dev/" target="_blank">Instagram</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="heading-wrapper">
+            <h1>Hi, I'm <span id="name">Paing</span> <img src="images/octocat.png" alt="cs50 Duck" id="duck"> </h1>
+        </div>
+        <div class="sections">
+            <section id="projects">
+                <hr>
+                <p><strong>These are some of my most recent projects:</strong></p>
+                <h2>Projects from introductory course</h2>
+                <ul>
+                    <li><a href="gallery/" target="_blank">Image Gallery</a></li>
+                    <li><a href="google/" target="_blank">Google Homepage Clone</a></li>
+                    <li><a href="menu/" target="_blank">Restaurant Menu</a></li>
+                    <li><a href="calculator/" target="_blank">Calculator</a></li>
+                </ul>
+                <h2>Other projects</h2>
+                <ul>
+                    <li><a href="https://github.com/Paing-Ko/myWebsite" target="_blank">My Website</a></li>
+                    <li><a href="https://github.com/Paing-Ko/myGame" target="_blank">My Game</a></li>
+                </ul>
+            </section>
+
+            <section id="home">
+                <hr>
+                <p><strong>I'm a future developer currently based in London.</strong></p>
+                <ul>
+                    <li>I work with HTML, CSS & JavaScript.</li>
+                    <li>I love coffee, sports & enjoy watching movies in my free time.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h2 id="hello">Say hello!</h2>
+        <form id="contactForm">
+            <input type="email" id="emailInput" placeholder="Your email" aria-label="Your email" required>
+            <button type="submit">Submit</button>
+            <p id="thankyouMessage" class="message">Thank you! I'll be in touch.</p>
+        </form>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
