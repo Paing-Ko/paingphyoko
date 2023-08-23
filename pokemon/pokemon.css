@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-image: url('pokemon.jpg');
+    background-position: center;
+}
+
+h2 {
+    text-transform: capitalize;
+}
