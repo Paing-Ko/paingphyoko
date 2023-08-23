@@ -1,5 +1,5 @@
 body {
     text-align: center;
-    background-image: url("images/weather.jpg");
-    background-size: auto ;
+    background-image: url("/images/weather.jpg");
+    background-size: auto;
 }
