@@ -22,8 +22,8 @@ html {
 
 #site-logo {
     position: fixed;
-    top: 1.5rem;
-    left: 0.5rem;
+    top: 1rem;
+    left: 1rem;
     width: 5vw;
     z-index: 1000;
 }
