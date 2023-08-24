@@ -12,11 +12,41 @@ html {
     html {
         font-size: 14px;
     }
+
+    ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    #hello {
+        font-size: 1.5rem;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 300px) {
     html {
         font-size: 12px;
+    }
+
+    ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    #hello {
+        font-size: 1.5rem;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0.5rem;
+        right: 0.5rem;
     }
 }
 
@@ -24,7 +54,7 @@ html {
     position: fixed;
     top: 1rem;
     left: 1rem;
-    width: 5vw;
+    width: 60px;
     z-index: 1000;
 }
 
@@ -41,7 +71,7 @@ body {
     margin: 0;
     height: 100%;
     background: linear-gradient(to right,
-                red, orange, yellow, green, blue, indigo, violet);
+            red, orange, yellow, green, blue, indigo, violet);
     color: #000d;
     font-family: 'Open Sans', sans-serif;
     transition: background-color 0.2s;
@@ -54,7 +84,7 @@ body {
 }
 
 #octocat {
-    width: 7vw;
+    width: 100px;
     height: auto;
     margin-left: -20px;
 
@@ -88,14 +118,6 @@ a {
     text-decoration: none;
     color: white;
 }
-/* 
-.outlined-text {
-    text-shadow:
-        -0.75px -0.75px 0 #000,
-        0.75px -0.75px 0 #000,
-        -0.75px 0.75px 0 #000,
-        0.75px 0.75px 0 #000;
-} */
 
 a:hover {
     text-decoration: underline;
@@ -168,7 +190,7 @@ main .sections section:last-of-type {
 
 footer {
     position: fixed;
-    bottom: 1rem;
+    bottom: 0.75rem;
     right: 1rem;
 }
 
@@ -219,10 +241,12 @@ button {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s;
+    margin-bottom: 0;
 }
 
 .message.visible {
     opacity: 1;
     pointer-events: all;
     color: white;
+    margin-bottom: 0;
 }
