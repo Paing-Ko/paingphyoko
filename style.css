@@ -23,7 +23,7 @@ html {
         animation: typewriter 1.3s steps(13, end);
     }
 
-    #projects ul li a {
+    body #projects ul li a {
         color: black;
     }
 
