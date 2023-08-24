@@ -8,40 +8,11 @@ html {
     font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
-    html {
-        font-size: 14px;
-    }
-
-    .heading-wrapper {
-        margin-bottom: 0.75rem;
-        font-size: 1.75rem;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typewriter 1.3s steps(13, end);
-    }
-
-    ul li {
-        margin-bottom: 0.5rem;
-    }
-
-    #hello {
-        font-size: 1.5rem;
-    }
-
-    #octocat {
-        width: 80px;
-    }
-
-
-    footer {
-        position: fixed;
-        bottom: 0.5rem;
-        right: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 300px) {
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    /* iPhone 8 styles here */
     html {
         font-size: 12px;
     }
