@@ -1,5 +1,11 @@
 body {
     text-align: center;
     background-image: url("weather.jpg");
+
     background-size: auto;
+    /* Make the image fit within the container without cropping */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center center;
+    /* Center the image horizontally and vertically */
 }

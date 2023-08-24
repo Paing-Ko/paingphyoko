@@ -80,3 +80,9 @@ async function showWeather() {
 }
 
 showButton.addEventListener("click", showWeather);
+postcodeInput.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    showWeather();
+  }
+});
+

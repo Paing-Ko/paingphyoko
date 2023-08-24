@@ -1,6 +1,12 @@
 body {
     text-align: center;
     background-image: url("pokemon.jpg");
+    background-size: auto;
+    /* Make the image fit within the container without cropping */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center center;
+    /* Center the image horizontally and vertically */
 }
 
 h2 {
@@ -11,7 +17,7 @@ img {
     border: 1px solid black;
     border-radius: 0.75rem;
     transition: transform 1s linear;
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
 img.rotated {

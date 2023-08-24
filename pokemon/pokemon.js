@@ -29,6 +29,12 @@ async function showPokemon() {
 }
 
 showButton.addEventListener("click", showPokemon);
+pokemonInput.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    showPokemon();
+  }
+});
+
 
 function rotateSpriteImage() {
   spriteImage.classList.toggle("rotated");
