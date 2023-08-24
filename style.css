@@ -27,6 +27,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     ul li {
         margin-bottom: 0.5rem;
+        color: black;
     }
 
     #hello {
