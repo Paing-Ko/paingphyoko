@@ -22,9 +22,9 @@ html {
 
 #site-logo {
     position: fixed;
-    top: 1rem;
-    left: 1rem;
-    width: 80px;
+    top: 1.5rem;
+    left: 0.5rem;
+    width: 5vw;
     z-index: 1000;
 }
 
@@ -53,8 +53,8 @@ body {
 
 }
 
-#duck {
-    width: 7.5vw;
+#octocat {
+    width: 7vw;
     height: auto;
     margin-left: -20px;
 
