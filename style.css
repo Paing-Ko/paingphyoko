@@ -8,10 +8,8 @@ html {
     font-size: 16px;
 }
 
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
     /* iPhone 8 styles here */
     html {
         font-size: 12px;
@@ -25,7 +23,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         animation: typewriter 1.3s steps(13, end);
     }
 
-    #projects ul {
+    #projects ul li a {
         color: black;
     }
 
