@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url(pokemon.jpg);
+    background-image: url("pokemon.jpg");
 }
 
 h2 {
@@ -9,8 +9,9 @@ h2 {
 
 img {
     border: 1px solid black;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     transition: transform 1s linear;
+    margin-bottom: 15px;
 }
 
 img.rotated {
