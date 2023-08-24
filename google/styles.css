@@ -200,17 +200,38 @@ footer {
 
 .footer-row {
     border-top: 1px solid #ccc;
-    padding: 0 1rem;
+    padding: 0.25rem 1rem;
 }
 
 .user-location {
-    padding: 0.75rem 1.75rem;
+    padding: 1rem 1.75rem;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    /* Make it a positioning context for absolute positioning of its children */
 }
+
+/* Absolute positioning for the middle ul */
+.footer-links>ul:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centering trick */
+}
+
+.footer-links ul li img {
+    width: 13px;
+    /* adjust as needed */
+    height: 15px;
+    /* adjust as needed */
+    vertical-align: auto;
+    /* align image vertically in the middle */
+}
+
 
 /* Responsive styles */
 

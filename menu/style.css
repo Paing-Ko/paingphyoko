@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kablammo&family=Nova+Oval&family=Roboto&display=swap");
 html {
     height: 100%;
 }
@@ -7,7 +6,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-image: url("https://images.pexels.com/photos/735869/pexels-photo-735869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/22/21/24/knife-2879328_1280.jpg");
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -17,36 +16,39 @@ main {
     display: inline-block;
     min-height: 100%;
     padding: 0 2rem;
-    background-color: #ffffffaa;
+    background-color: #3333;
 }
 
 h1,
 h2 {
     margin-bottom: 0;
     line-height: 1;
-    font-family: "Sacramento", cursive;
+    font-family: "Indie Flower", cursive;
 }
 
 h1 {
     font-size: 3rem;
+    text-decoration: underline;
 }
 
 h2 {
     font-size: 2rem;
+    color: white;
 }
 
 ul {
     margin-top: 0;
     padding-left: 0;
     list-style-position: inside;
+    line-height: 1.5;
 }
 
 .fa-book-open {
-    color: deepskyblue;
+    color: black;
 }
 
-.fa-bread-slice {
-    color: sienna;
+.fa-cookie-bite {
+    color: coral;
 }
 
 .fa-utensils {
@@ -54,5 +56,5 @@ ul {
 }
 
 .fa-ice-cream {
-    color: lightcoral;
+    color: pink;
 }
