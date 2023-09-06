@@ -32,8 +32,8 @@ function startTimer() {
     if (timeLeft <= 0) {
       clearInterval(interval);
       displayTime.textContent = "0";
-      timeInput.value = ""; // Clear the input field
-      // Stretch Requirement: Notify user
+      timeInput.value = ""; 
+
       alert("Time's up!");
     }
   }, 1000);
