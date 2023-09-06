@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paing Phyo Ko | To Do List</title>
+    <title>Paing Phyo Ko | To-Do List</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="todo.css">
 </head>
 
 <body>
 
-    <h1>Paing's To-Do-List &check;</h1>
-    <div class="todo-list">
-        <input type="text" id="new-task" placeholder="Add a new task...">
-        <button onclick="addTask()">Add</button>
-        <ul id="task-list"></ul>
-    </div>
+    <main>
+        <h1>To-do List</h1>
+        <form id="taskForm" action="">
+            <label for="taskInput">
+                <p class="lead">What do you have to to?</p>
+            </label>
+            <input type="text" id="taskInput" placeholder="Enter a task">
+        </form>
+        <ul class="tasks" id="taskList"></ul>
+    </main>
 
     <script src="todo.js"></script>
 </body>

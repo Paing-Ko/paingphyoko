@@ -1,61 +1,110 @@
-body {
-    background-color: deepskyblue;
-}
-
-h1 {
-    text-align: center;
-    margin: 70px;
-}
-
-.todo-list {
-    max-width: 400px;
-    padding: 50px;
-    margin: 100px auto;
-    text-align: center;
-}
-
-
-ul li {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    text-align: start;
-    margin-bottom: 10px;
-}
-
-.task {
-    flex-grow: 1;
-}
-
-.completed {
-    text-decoration: line-through;
-}
-
-
-input[type="text"] {
-    width: 50%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    outline: none;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-input[type="text"]:focus {
-    border-color: #0077cc;
-    box-shadow: 0 0 10px rgba(0, 119, 204, 0.3);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-.todo-list button {
-    padding: 5px;
-    background-color: black;
-    color: white;
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.todo-list button:hover {
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#taskInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.tasks {
+    list-style: none;
+    padding: 0px 5px;
+    margin: 10px;
+    border: 2px solid black;
+
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task input[type="text"] {
+    flex: 1;
+    border: none;
     padding: 5px;
-    background-color: white;
-    color: black;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+/* Style for move-up and move-down buttons */
+.move-up,
+.move-down {
+    background-color: #007BFF;
+    /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.move-up:hover,
+.move-down:hover {
+    background-color: #0056b3;
+}
+
+/* Style for delete task button */
+.delete-task {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-task:hover {
+    background-color: darkred;
+}
+
+/* CSS for crossing out the text when checkbox is checked */
+.task input[type="checkbox"]:checked+input[type="text"] {
+    text-decoration: line-through;
+    color: #888;
 }
